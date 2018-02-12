@@ -5,47 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>寶吉婚禮</title>
 
-  <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <style>
-	.parallax-container {
-	  height: 500px;
-	}
-
-	@media only screen and (max-width : 992px) {
-	  .parallax img {
-
-	    max-height: 150%;
-	    margin-left: -140px;
-	  }
-		.parallax-container {
-		  height: 50px;
-		}
-	}
-
-	@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
-	  .parallax img {
-	    max-height: 100%;
-	    margin: 0;
-	  }
-		.parallax-container {
-		  height: 500px;
-		}
-	}
-
-	@media only screen and (min-width: 993px) {
-	  .parallax img {
-	    max-height: 160%;
-	    margin: 0;
-	  }
-		.parallax-container {
-		  height: 800px;
-		}
-	}
-
-  </style>
+  <link href="css/parallax.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
   <nav class="white" role="navigation">
@@ -249,68 +212,22 @@
     </div>
   </div>
 
-  <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-
-	<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
-	<script>
-	  // Initialize Firebase
-	  var config = {
-	    apiKey: "AIzaSyD78J7UifBDi3qkdjkLHzHrCL8NeNGi72Y",
-	    authDomain: "boaji0324.firebaseapp.com",
-	    databaseURL: "https://boaji0324.firebaseio.com",
-	    projectId: "boaji0324",
-	    storageBucket: "",
-	    messagingSenderId: "397024840756"
-	  };
-	  firebase.initializeApp(config);
-	  var db = firebase.database();
-	</script>
+  <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
   <script>
-  $("#wedding_form").submit(function(e) {
-  	var output = {
-  		name: $("#name").val(),
-  		phone: $("#phone").val(),
-  		address: $("#address").val(),
-  		attendance: $("[name='attendance']:checked").val(),
-  		persons: $("#persons").val(),
-  		children: $("#children").val(),
-  		vegetarian: $("[name='vegetarian']:checked").val(),
-  		message: $("#message").val()
-  	};
-  	console.log(output);
-		db.ref(Date.now()).set(output);
-		$('#thank_modal').modal('open');
-		$('#wedding_form')[0].reset();
-		$('html,body').animate({ scrollTop: 0 }, 'slow');
-		return false;
-  });
-	$('input[type=radio][name=attendance]').on('change', function() {
-		if (this.value == 1) {
-			$("#persons").closest('div.row').show();
-			$("#children").closest('div.row').show();
-			$("[name=vegetarian]").closest('div.row').show();
-		}
-		else {
-                    if (this.value == 0) {
-                        $("#address").closest('div.row').show();
-                    }
-                    else {
-                        $("#address").closest('div.row').hide();
-                    }
-                    $("#persons").closest('div.row').hide();
-                    $("#children").closest('div.row').hide();
-                    $("[name=vegetarian]").closest('div.row').hide();
-		}
-	});
-  $(document).ready(function() {
-	  $('.parallax').parallax();
-    $('select').material_select();
-    $('.modal').modal();
-  });
+    var config = {
+      apiKey: "AIzaSyD78J7UifBDi3qkdjkLHzHrCL8NeNGi72Y",
+      authDomain: "boaji0324.firebaseapp.com",
+      databaseURL: "https://boaji0324.firebaseio.com",
+      projectId: "boaji0324",
+      storageBucket: "",
+      messagingSenderId: "397024840756"
+    };
+    firebase.initializeApp(config);
+    var db = firebase.database();
   </script>
-
+  <script src="js/form.js"></script>
   </body>
 </html>
