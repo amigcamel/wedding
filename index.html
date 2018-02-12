@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>寶吉婚禮</title>
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/parallax.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/parallax.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
+
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
@@ -28,7 +30,6 @@
           <h5 class="header col s12 light"></h5>
         </div>
         <br><br>
-
       </div>
     </div>
     <div class="parallax"><img src="https://cdn.rawgit.com/amigcamel/wedding/3c1e7ae5/img/background1.jpg" alt="Boaji1"></div>
@@ -36,111 +37,110 @@
 
   <div class="container">
     <div class="section">
-	  <h3 class="center">純睿・微蓉 婚宴</h3>
-	  <h5 class="center">2018.03.24 (六)</h5>
-	  <h5 class="center">中午 12:00</h5>
-	  <br><br>
-	  <div class="row">
-	    <form id="wedding_form" class="col s12">
-	      <div class="row">
-	        <div class="input-field col s6">
-	          <i class="material-icons prefix">account_circle</i>
-	          <input id="name" type="text" class="validate" required="">
-	          <label for="name">您的大名</label>
-	        </div>
-	        <div class="input-field col s6">
-	          <i class="material-icons prefix">smartphone</i>
-	          <input id="phone" type="tel" class="validate" required="">
-	          <label for="phone">聯絡電話</label>
-	        </div>
-	      </div>
-	      <div class="row">
-	        <div class="col s12">
-	        	<h5>
-			    <i class="material-icons">schedule</i>
-                            03/24當天是否出席?
-                        </h5>
-			    <p>
-			      <input name="attendance" type="radio" id="attendance_1" value="1" required="" />
-			      <label for="attendance_1">人到禮到</label>
-			    </p>
-			    <p>
-			      <input name="attendance" type="radio" id="attendance_2" value="0" />
-			      <label for="attendance_2">人不到禮到</label>
-			    </p>
-			    <p>
-			      <input name="attendance" type="radio" id="attendance_3" value="-1" />
-			      <label for="attendance_3">無法參加</label>
-			    </p>
-	        </div>
-	      </div>
+      <h3 class="center">純睿・微蓉 婚宴</h3>
+      <h5 class="center">2018.03.24 (六)</h5>
+      <h5 class="center">中午 12:00</h5>
+      <br><br>
+      <div class="row">
+        <form id="wedding_form" class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="name" type="text" class="validate" required="">
+              <label for="name">您的大名</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">smartphone</i>
+              <input id="phone" type="tel" class="validate" required="">
+              <label for="phone">聯絡電話</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <h5>
+      			    <i class="material-icons">schedule</i>
+                03/24當天是否出席?
+              </h5>
+              <p>
+                <input name="attendance" type="radio" id="attendance_1" value="1" required="" />
+                <label for="attendance_1">人到禮到</label>
+              </p>
+              <p>
+                <input name="attendance" type="radio" id="attendance_2" value="0" />
+                <label for="attendance_2">人不到禮到</label>
+              </p>
+              <p>
+                <input name="attendance" type="radio" id="attendance_3" value="-1" />
+                <label for="attendance_3">無法參加</label>
+              </p>
+            </div>
+          </div>
 
-              <div class="row">
-	        <div class="input-field col s12">
-	          <i class="material-icons prefix">home</i>
-	          <input id="address" type="text" required="">
-	          <label for="address">喜帖寄送地址</label>
-	        </div>	        
-              </div>
-	      <div class="row">
-
-				  <div class="input-field col s12">
-				    <select id="persons">
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">home</i>
+              <input id="address" type="text" required="">
+              <label for="address">喜帖寄送地址</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <select id="persons">
 				      <option value="1">1位</option>
 				      <option value="2">2位</option>
 				      <option value="3">3位</option>
 				      <option value="4">4位</option>
 				      <option value="5">5位</option>
 				    </select>
-				    <label>
-			                <i class="material-icons">people</i>
-                                        預計出席人數
-                                    </label>
-				  </div>
-	      </div>
-	      <div class="row">
-				  <div class="input-field col s12">
-				    <select id="children">
+              <label>
+                <i class="material-icons">people</i>
+                預計出席人數
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <select id="children">
 				      <option value="0">0張</option>
 				      <option value="1">1張</option>
 				      <option value="2">2張</option>
 				    </select>
-				    <label>
-			                <i class="material-icons">child_care</i>
-                                        需要兒童椅數量
-                                    </label>
-				  </div>
-	      </div>
-	      <div class="row">
-	        <div class="col s12">
-	        	<h5>
-			    <i class="material-icons">local_dining</i>
-                            請問有素食需求嗎
-                        </h5>
-			    <p>
-			      <input name="vegetarian" type="radio" id="vegetarian_1" value="false" required="" checked />
-			      <label for="vegetarian_1">沒有</label>
-			    </p>
-			    <p>
-			      <input name="vegetarian" type="radio" id="vegetarian_2" value="true" />
-			      <label for="vegetarian_2">有</label>
-			    </p>
-	        </div>
-	      </div>
-	      <div class="row">
-	        <div class="input-field col s12">
-	          <textarea id="message" class="materialize-textarea"></textarea>
-	          <label for="message">
-		      <i class="material-icons">message</i>
-                      想對我們說什麼的嗎
-                  </label>
-	        </div>
-	      </div>
-			  <button class="btn waves-effect waves-light btn-large" type="submit" name="action">送出
+              <label>
+                <i class="material-icons">child_care</i>
+                需要兒童椅數量
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <h5>
+      			    <i class="material-icons">local_dining</i>
+                請問有素食需求嗎
+              </h5>
+              <p>
+                <input name="vegetarian" type="radio" id="vegetarian_1" value="false" required="" checked />
+                <label for="vegetarian_1">沒有</label>
+              </p>
+              <p>
+                <input name="vegetarian" type="radio" id="vegetarian_2" value="true" />
+                <label for="vegetarian_2">有</label>
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="message" class="materialize-textarea"></textarea>
+              <label for="message">
+      		      <i class="material-icons">message</i>
+                想對我們說什麼的嗎
+              </label>
+            </div>
+          </div>
+          <button class="btn waves-effect waves-light btn-large" type="submit" name="action">送出
 			    <i class="material-icons right">send</i>
 			  </button>
-	    </form>
-	  </div>
+        </form>
+      </div>
     </div>
   </div>
 
@@ -157,7 +157,6 @@
 
   <div class="container">
     <div class="section">
-
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
@@ -169,42 +168,41 @@
             </a>
           </p>
           <p>地址： 338桃園市蘆竹區南崁路一段108號</p>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37772.57536408687!2d121.26851817693172!3d25.046408237869016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a074f8295ee1%3A0xd79af912d69aa940!2z5bCK54i15aSp6Zqb5aSn6aOv5bqX!5e0!3m2!1szh-TW!2stw!4v1518341643070" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37772.57536408687!2d121.26851817693172!3d25.046408237869016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a074f8295ee1%3A0xd79af912d69aa940!2z5bCK54i15aSp6Zqb5aSn6aOv5bqX!5e0!3m2!1szh-TW!2stw!4v1518341643070"
+            width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
-				<div class="row">
-					<div class="col s12">
-						<h6>自行開車： (下南崁交流道後行駛約5-7分)</h6>
-						<ol>
-							<li>中山高：下南崁交流道，往南崁方向沿中正路直行接南崁路一段即可抵達。</li>
-							<li>北二高：南下過「三鶯交流道」/ 北上過「大溪交流道」接東西向機場聯絡道(國道2號)，走中山高北上方向下南崁交流道，往南崁方向沿中正路直行接南崁路一段即可抵達。</li>
-						</ol>
+        <div class="row">
+          <div class="col s12">
+            <h6>自行開車： (下南崁交流道後行駛約5-7分)</h6>
+            <ol>
+              <li>中山高：下南崁交流道，往南崁方向沿中正路直行接南崁路一段即可抵達。</li>
+              <li>北二高：南下過「三鶯交流道」/ 北上過「大溪交流道」接東西向機場聯絡道(國道2號)，走中山高北上方向下南崁交流道，往南崁方向沿中正路直行接南崁路一段即可抵達。</li>
+            </ol>
 
-						<h6>大眾交通工具：</h6>
-						<ol>
-							<li>台鐵：桃園站下車，搭乘桃園客運或計程車◎桃園客運 搭車處：桃園火車站中正路直行右轉復興路 7-11超商站 下車站：台茂。</li>
-							<li>高鐵：高鐵桃園站下車，搭乘往機場之接駁公車，再轉乘國光號客運或大有巴士往南崁台茂站下車。</li>
-						</ol>
-						<h6>台北至飯店：</h6>
-						<ol>
-							<li>民權西路捷運站下車轉乘往桃園方向經南崁「台汽客運國光號」、「亞通巴士」、「大有巴士」 下車站：台茂(下南崁交流道後第三站) 。</li>
-						</ol>
-					</div>
-					<div class="row center">
-						<div class="col s12">		
-							<img src="https://cdn.rawgit.com/amigcamel/wedding/3c1e7ae5/img/map.jpg" width="50%" />
-						</div>
-					</div>
-				</div>
+            <h6>大眾交通工具：</h6>
+            <ol>
+              <li>台鐵：桃園站下車，搭乘桃園客運或計程車◎桃園客運 搭車處：桃園火車站中正路直行右轉復興路 7-11超商站 下車站：台茂。</li>
+              <li>高鐵：高鐵桃園站下車，搭乘往機場之接駁公車，再轉乘國光號客運或大有巴士往南崁台茂站下車。</li>
+            </ol>
+            <h6>台北至飯店：</h6>
+            <ol>
+              <li>民權西路捷運站下車轉乘往桃園方向經南崁「台汽客運國光號」、「亞通巴士」、「大有巴士」 下車站：台茂(下南崁交流道後第三站) 。</li>
+            </ol>
+          </div>
+          <div class="row center">
+            <div class="col s12">
+              <img src="https://cdn.rawgit.com/amigcamel/wedding/3c1e7ae5/img/map.jpg" width="50%" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
   <footer class="page-footer teal">
-    
-      <div class="container center">
-	      Made by <a class="brown-text text-lighten-3" href="https://aji.tw">阿吉</a>, 2018
-      </div>
-    
+    <div class="container center">
+      Made by <a class="brown-text text-lighten-3" href="https://aji.tw">阿吉</a>, 2018
+    </div>
   </footer>
 
   <!-- Modal Structure -->
@@ -234,5 +232,6 @@
     var db = firebase.database();
   </script>
   <script src="js/form.js"></script>
-  </body>
+</body>
+
 </html>
