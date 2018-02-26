@@ -24,9 +24,11 @@
 		}
 		else {
                     if (this.value == 0) {
+                        $("#address").prop("required", true);
                         $("#address").closest('div.row').show();
                     }
                     else {
+                        $("#address").removeAttr("required");
                         $("#address").closest('div.row').hide();
                     }
                     $("#persons").closest('div.row').hide();
