@@ -64,6 +64,10 @@ footer.page-footer {
 @media only screen
 and (min-device-width : 375px)
 and (max-device-width : 667px) {
+  .parallax img[alt="rema1"] {
+    max-height: 100%;
+  }
+
   .parallax img[alt="rema2"] {
     margin-left: -123px;
   }
@@ -73,6 +77,6 @@ and (max-device-width : 667px) {
   }
 
   .parallax-container {
-    height: 150px !important;
+    height: 100px !important;
   }
 }
